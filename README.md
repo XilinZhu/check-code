@@ -36,7 +36,7 @@ Based on Spring Boot framework and Kaptcha module, a verification code function 
 
 1. 用户访问服务器时，会被重定向到登录页面——`LoginController.java`
 
-   <img src="https://i.loli.net/2020/10/13/ZihbIfgKNuJ9VlF.png" height="280" />
+   <img src="https://i.loli.net/2020/10/13/ZihbIfgKNuJ9VlF.png" height="200" />
 
 2. 提示用户输入账号、密码与验证码。提交表单时，服务器端将检测三个输入框是否为空，并检测验证码是否正确。任何一项不满足时，网页都将以红字作相应提示。当验证码输入正确时，页面将跳转至“验证成功”页面——`KaptchaConfig.java` `KaptchaController.java`
 
@@ -55,7 +55,7 @@ Based on Spring Boot framework and Kaptcha module, a verification code function 
 
 3. 用户可以点击 <u>看不清？点击图片刷新一下</u> 来重新获得一个辨认难度更低的验证码图片—— `MyGetImage.java`
 
-   <img src="https://i.loli.net/2020/10/13/N1skMeVgEPjm7uB.png" style="zoom:50%;" />
+   <img src="https://i.loli.net/2020/10/13/N1skMeVgEPjm7uB.png" height="280" />
 
 ## 实现细节
 
