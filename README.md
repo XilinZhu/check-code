@@ -43,7 +43,7 @@ Based on Spring Boot framework and Kaptcha module, a verification code function 
    <table> 
        <tr>
            <td><center><img src = "https://i.loli.net/2020/10/13/PiTd72OF3lAqIU8.png" height="280" ></center><br>
-               <center>图1 错误提示</center>
+               <center>图1 验证失败</center>
            </td>
            <td><center><img src = "https://i.loli.net/2020/10/13/POJ36YmKoTelDAj.png",height="300"></center><br>
            	<center>图2 验证成功</center>
@@ -68,7 +68,7 @@ Based on Spring Boot framework and Kaptcha module, a verification code function 
    2. 生成验证码
    3. 将验证码文本写入 `session`
    4. 验证码图片以字节流的形式写入 `response` 的缓冲区
-6. 为了防止作弊，避免浏览器缓存验证码信息，利用 `servle` 在 HTTP 响应报头进行设置，如 `response.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");`。
+6. 为了防止作弊，禁止浏览器缓存验证码信息，利用 `servle` 在 HTTP 响应报头进行设置，如 `response.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");`。
 7. 使用 `Servlet.ModelAndView` 来处理用户提交的表单
 8. 关于刷新验证码：当用户点击 <u>看不清？点击图片刷新一下</u>时，通过 `new Date()*1` 作为参数发送到服务器。在调用 `kaptcha` 生成验证码之前，服务器程序会首先检测此参数，若不为空，则将调用 `MyGetImage.outputImage()` 来生成一个更易辨识的验证码。
 9. `MyGetImage.outputImage()` 主要利用 `java.awt.Graphics2D` 实现了一个仿射变换。 
