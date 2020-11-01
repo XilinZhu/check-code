@@ -4,7 +4,7 @@ Based on Spring Boot framework and Kaptcha module, a verification code function 
 ## 环境配置
 
 - VS Code
-- Maven + Thymeleaf + Tomcat
+- Kaptcha + Thymeleaf
 - [配置细节参考](https://blog.csdn.net/qq_43145926/article/details/105016919?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduend~default-1-105016919.nonecase&utm_term=vscode%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2tomcat&spm=1000.2123.3001.4430)
 
 ## 项目目录
@@ -52,7 +52,6 @@ Based on Spring Boot framework and Kaptcha module, a verification code function 
    </table>
 
    
-
 3. 用户可以点击 <u>看不清？点击图片刷新一下</u> 来重新获得一个辨认难度更低的验证码图片—— `MyGetImage.java`
 
    <img src="https://i.loli.net/2020/10/13/N1skMeVgEPjm7uB.png" height="280" />
